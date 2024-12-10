@@ -19,6 +19,7 @@ calculator continues to run until the
 user chooses to stop. You can run
 this code in a Python environment to
 interact with the calculator.
+output:![image](https://github.com/user-attachments/assets/aa1440a7-aa56-4c18-b48a-dc6a36526f60)
 
 
 
