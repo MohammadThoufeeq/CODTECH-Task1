@@ -1,0 +1,58 @@
+# Basic calculator program
+
+# Function for addition
+def add(x, y):
+    return x + y
+
+# Function for subtraction
+def subtract(x, y):
+    return x - y
+
+# Function for multiplication
+def multiply(x, y):
+    return x * y
+
+# Function for division
+def divide(x, y):
+    if y == 0:
+        return "Error! Division by zero."
+    else:
+        return x / y
+
+# Main program
+def calculator():
+    # Prompt user for input
+    print("Welcome to the basic calculator!")
+    
+    # Get user input for numbers
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    
+    # Show operation choices
+    print("Select an operation:")
+    print("1. Addition (+)")
+    print("2. Subtraction (-)")
+    print("3. Multiplication (*)")
+    print("4. Division (/)")
+    
+    # Get user choice for operation
+    choice = input("Enter choice (1/2/3/4): ")
+    
+    # Perform operation based on choice
+    if choice == '1':
+        result = add(num1, num2)
+        print(f"The result of {num1} + {num2} is: {result}")
+    elif choice == '2':
+        result = subtract(num1, num2)
+        print(f"The result of {num1} - {num2} is: {result}")
+    elif choice == '3':
+        result = multiply(num1, num2)
+        print(f"The result of {num1} * {num2} is: {result}")
+    elif choice == '4':
+        result = divide(num1, num2)
+        print(f"The result of {num1} / {num2} is: {result}")
+    else:
+        print("Invalid input! Please choose a valid operation.")
+    
+# Run the calculator
+calculator()
